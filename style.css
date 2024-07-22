@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+.login,
+.register,
+.forgot,
+.enter {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.login_pict img,
+.register_pict img,
+.forgot_pict img,
+.enter_pict img {
+  width: 845px;
+  height: 1024px;
+}
+.login_base,
+.register_base,
+.forgot_base,
+.enter_base {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-size: 14px;
+}
+.login_word p,
+.register_word p,
+.forgot_word p,
+.enter_word p,
+.success_word p {
+  font-size: 14px;
+  color: gray;
+}
+.login_form_group input,
+.register_form_group input,
+.forgot_form_group input {
+  width: 416px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #35aff4;
+}
+.login_form_sub {
+  display: flex;
+  justify-content: space-between;
+}
+.login_form_check,
+.register_form_check {
+  display: flex;
+  justify-content: baseline;
+  gap: 5px;
+}
+.login_form_forgot {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.forgot_back,
+.enter_back {
+  display: flex;
+  justify-content: baseline;
+  gap: 5px;
+}
+.forgot_back i,
+.enter_back i {
+  cursor: pointer;
+}
+.enter_input input {
+  width: 60px;
+  height: 60px;
+  border: 1px solid #35aff4;
+  margin: 10px;
+  border-radius: 10px;
+}
+.success{
+  width: 432px;
+  height: 332px;
+  background-color: yellow;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  text-align: center;
+}
+.ellipse1 {
+  background-color: #35AFF41A;
+  border-radius: 50%;
+  height:108px;
+  width:108px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ellipse2 {
+  background-color: #35AFF433;
+  border-radius: 50%;
+  height:86px;
+  width:86px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ellipse3 {
+  background-color: #35AFF4;
+  border-radius: 50%;
+  height:64px;
+  width:64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  width: 410px;
+  height: 56px;
+  border: none;
+  border-radius: 10px;
+  background: #35aff4;
+  cursor: pointer;
+  color: #ffff;
+}
+.btn_back_login{
+  width: 300px;
+  height: 56px;
+  border: none;
+  border-radius: 10px;
+  background: #35aff4;
+  cursor: pointer;
+  color: #ffff;
+}
