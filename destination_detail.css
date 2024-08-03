@@ -78,13 +78,14 @@
   color: gray;
 }
 .destination_review i {
-  color: rgb(209, 207, 207);
+  color: #FFCA01;
   font-size: 14px;
 }
 .destination_like {
   border: 10px solid #35aff4;
   background-color: #35aff4;
   border-radius: 5px;
+  cursor: pointer;
 }
 .destination_like i {
   color: #fff;
@@ -98,7 +99,8 @@
   margin-bottom: 30px;
 }
 .overview p {
-  margin: 10px 30% 10px 0px;
+  margin: 10px 40% 10px 0px;
+  text-align: justify;
 }
 .include_exclude{
   display: flex;
@@ -111,9 +113,31 @@
 .exclude i{
   color: #FA3913;
 }
+.trip_plan ul{
+  width: 600px;
+  margin: 20px 40% 20px 0;
+}
+.trip_plan ul li{
+  /* display: flex; 
+  justify-content: space-between;   */
+  cursor: pointer;
+} 
+.trip_plan ul li p
+,.trip_plan ul li img{
+  text-align: justify;
+  overflow: hidden;
+  height: 0px;
+  transition: height 0.3s ease;
+}
+.trip_cards{
+  display: flex;
+  margin: 20px 0 20px 0;
+  gap: 20px;
+  text-align: center;
+}
 .trip_card{
-  width: 366px;
-  height: 451px;
+  width: 35%;
+  height: 60vh;
   display: flex;
   flex-direction: column;
   border-radius: 10px;
@@ -131,6 +155,7 @@
 }
 .location_date{
   display: flex;
+  justify-content: space-around;
   padding: 10px;
   gap: 30px;
 }
@@ -139,7 +164,7 @@
 }
 .trip_details{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .btn {
   border: 1px solid #35aff4;
