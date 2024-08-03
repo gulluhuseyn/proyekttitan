@@ -3,6 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="destination_detail.css" />
     <title>Document</title>
   </head>
@@ -12,31 +19,173 @@
       <div class="breadcrumb"></div>
     </div>
     <div class="destination_pict">
-      <img src="destination_detail.png" alt="" />
+      <img src="destination_detail_page/destination_detail.png" alt="" />
     </div>
-    <div class="container">
-      <div class="destination_ticket">
-        <div class="ticket_value">
-          <h2>$2350</h2>
-          <span>/per person</span>
+    <div class="destination_ticket">
+      <div class="ticket_value">
+        <h1>$2350</h1>
+        <span>/per person</span>
+      </div>
+      <hr />
+      <form>
+        <div class="form_group">
+          <input type="date" placeholder="Start date" />
+          <label for="date">Start date</label>
         </div>
-        <hr>
-        <div class="start_date">
-          <form>
-            <div class="form_group">
-              <input type="date" placeholder="Start date" />
-              <label for="date">Start date</label>
-            </div>
-          </form>
+        <div class="form_group">
+          <input type="date" placeholder="End date" />
+          <label for="date">End date</label>
+        </div>
+      </form>
+      <div class="form_inputs">
+        <div class="form_input">
+          <h4>Adults</h4>
+          <input class="input" type="number" min="0" />
+          <p>x $2350</p>
+        </div>
+        <div class="form_input">
+          <h4>Children</h4>
+          <input class="input" type="number" min="0" />
+          <p>x $2000</p>
+        </div>
+        <div class="form_input">
+          <h4>İnfant</h4>
+          <input class="input" type="number" min="0" />
+          <p>x $2350</p>
         </div>
       </div>
-      <div class="destination_word"></div>
-      <div class="destination_grid">
-        <div class="destination_review"></div>
-        <div class="destination_day"></div>
-        <div class="destination_location"></div>
-        <div class="destination_like"></div>
-        <div class="destination_share"></div>
+      <h3>Extra Service</h3>
+      <div class="trip_service">
+        <input type="checkbox" />
+        <label>Health Insurance</label>
+      </div>
+      <div class="trip_service">
+        <input type="checkbox" />
+        <label>Medical Insurance</label>
+      </div>
+      <button class="submit_btn">Book Now</button>
+    </div>
+    <div class="container">
+      <div class="destination_word">
+        <h1>Romantic Maldives</h1>
+      </div>
+      <div class="destination_content">
+        <div class="destination_review">
+          <p>Review</p>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <div class="destination_review">
+          <p>Days</p>
+          <h4>5 Days/4 Night</h4>
+        </div>
+        <div class="destination_review">
+          <p>Location</p>
+          <h4>Maldives</h4>
+        </div>
+        <br />
+        <div class="destination_like">
+          <i class="fa-regular fa-heart"></i>
+        </div>
+        <div class="destination_share">
+          <button class="btn">
+            <i class="fa-solid fa-share-nodes"></i>
+            Share
+          </button>
+        </div>
+      </div>
+      <div class="pass">
+        <a href="">Overview</a>
+        <a href="">Review</a>
+      </div>
+      <div class="overview">
+        <h3>Trip Overview</h3>
+        <p>
+          It is a long established fact that a reader will be distracted by the
+          readable content of a page when looking at its layout. The point of
+          using Lorem Ipsum is that it has a more-or-less normal distribution of
+          letters, as opposed to using 'Content here, content here', making it
+          look like readable English. Many desktop publishing packages and web
+          page editors now use Lorem Ipsum as their default model text, and a
+          search for 'lorem ipsum' will uncover many web sites still in their
+          infancy.
+        </p>
+        <p>
+          Various versions have evolved over the years, sometimes by accident,
+          sometimes on purpose (injected humour and the like).
+        </p>
+      </div>
+      <h3>Included/Excluded</h3>
+      <div class="include_exclude">
+        <div class="include">
+          <i class="fa-regular fa-circle-check"></i>
+          <span>Flight Ticket & Cab Transportation</span><br /><br />
+          <i class="fa-regular fa-circle-check"></i>
+          <span>Breakfast, Lunch & Dinner</span><br /><br />
+          <i class="fa-regular fa-circle-check"></i>
+          <span>Hotel Accommodation</span><br /><br />
+          <i class="fa-regular fa-circle-check"></i>
+          <span>Professional Tour Guide</span><br /><br />
+          <i class="fa-regular fa-circle-check"></i>
+          <span>Transfer Between Destinations</span><br /><br />
+          <i class="fa-regular fa-circle-check"></i>
+          <span>How to use premade UI kits</span>
+        </div>
+        <div class="exclude">
+          <i class="fa-regular fa-circle-xmark"></i>
+          <span>Sight-seen</span><br /><br />
+          <i class="fa-regular fa-circle-xmark"></i>
+          <span>City Tour</span><br /><br />
+          <i class="fa-regular fa-circle-xmark"></i>
+          <span>Custom Duty</span><br /><br />
+        </div>
+      </div>
+      <div class="trip_plan">
+        <h3>Trip Plan</h3>
+        <div class="day1"></div>
+        <div class="day1"></div>
+        <div class="day1"></div>
+        <div class="day1"></div>
+        <div class="day1"></div>
+      </div>
+      <div class="similar_trip">
+        <h1>Similar Trip</h1>
+        <div class="trip_card">
+          <div class="trip_pict">
+            <img src="destination_detail_page/trip1.png" />
+          </div>
+          <div class="trip_content">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>4.8 (8.0K Reviews)</span>
+            <h3>Grand Switzerland</h3>
+          </div>
+          <div class="location_date">
+            <div class="location">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Switzerland</span>
+            </div>
+            <div class="date">
+              <i class="fa-regular fa-calendar"></i>
+              <span>5 Days/4 Night</span>
+            </div>
+          </div>
+          <div class="trip_details">
+            <div class="trip_price">
+              <h3>$1500</h3>
+              <span>/per person</span>
+            </div>
+            <button class="submit_btn">View more</button>
+          </div>
+        </div>
+        <div class="trip_card"></div>
+        <div class="trip_card"></div>
       </div>
     </div>
   </body>
