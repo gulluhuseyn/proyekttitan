@@ -13,7 +13,7 @@
   --text_color: #0f1416;
   --like_color: #ffca01;
   --white: #fff;
-  --border_color: 1px solid rgba(166, 170, 172, 0.2);
+  --border_color: 1px solid #a6aaac33;
 }
 .container {
   width: 1140px;
@@ -24,7 +24,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 25px;
+  margin: 25px 0;
 }
 .nav_links ul {
   display: flex;
@@ -65,6 +65,7 @@
 }
 .destination {
   width: calc(70% - 30px * 0.7);
+  margin-bottom: 80px;
 }
 .destination_ticket {
   margin-top: -150px;
@@ -135,6 +136,9 @@
   text-align: left;
 }
 .trip_service {
+  display: flex;
+  align-items: center;
+  gap: 5px;
   color: var(--text_color);
   font-size: 16px;
   font-style: normal;
@@ -165,7 +169,7 @@
 .destination_review_col {
   border-right: var(--border_color);
   padding-right: 34px;
-  color: var(--Gray-500, #a6aaac);
+  color: #a6aaac;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -203,81 +207,217 @@
   display: flex;
   gap: 15px;
   margin: 30px 0;
-  border-bottom: 1px solid #a6aaac33;
-  padding: 10px 0;
+  border-bottom: var(--border_color);
 }
-.pass_overview {
-  padding: 0 0 5px 0;
-  border-bottom: 1px solid var(--main_color);
+.pass_review {
+  padding: 10px 0;
+  border-bottom: 3.5px solid var(--main_color);
   color: var(--main_color);
   font-size: 20px;
   font-weight: 700;
   line-height: 30px;
   text-align: left;
 }
-.pass_review {
+.pass_overview {
+  padding: 10px 0;
   color: var(--text_color);
   font-size: 20px;
   font-weight: 400;
   line-height: 30px;
   text-align: left;
 }
-.overview {
-  border-bottom: 1px solid #a6aaac33;
-  padding-bottom: 20px;
+.review {
   margin-bottom: 30px;
 }
-.overview p {
-  text-align: justify;
-  padding-top: 10px;
+.review p {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: left;
 }
-.include_exclude {
+.review_value {
+  margin-top: 20px;
+  background-color: #35aff41a;
+  border-radius: 20px;
+  padding: 20px;
   display: flex;
-  gap: 65px;
-  padding: 20px 0;
+  gap: 30px;
+}
+.review_value_col {
+  width: calc(20% - 30px * 0.2);
+  border-right: 2px solid #ffffffcc;
+  text-align: center;
+}
+.review_value_rows {
+  width: calc(80% - 30px * 0.8);
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
+}
+.review_value_col h1 {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 80px;
+}
+.review_value_col p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+}
+.review_value_col i {
+  color: var(--like_color);
+}
+.review_value_row h1 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: right;
+  position: relative;
+  padding-right: 270px;
+}
+.review_value_row p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+}
+.review_value_row h1::after {
+  content: "";
+  width: 100%;
+  height: 5px;
+  border-radius: 10px;
+  position: absolute;
+  top: 40%;
+}
+#excelt::after {
+  content: "";
+  background: var(--main_color);
+}
+#good::after {
+  content: "";
+  background: linear-gradient(
+    to right,
+    var(--main_color) 30%,
+    #a6aaac33 30% 100%
+  );
+}
+#avg::after {
+  content: "";
+  background: linear-gradient(
+    to right,
+    var(--main_color) 10%,
+    #a6aaac33 10% 100%
+  );
+}
+#poor::after {
+  content: "";
+  background: linear-gradient(
+    to right,
+    var(--main_color) 5%,
+    #a6aaac33 5% 100%
+  );
+}
+#terri::after {
+  content: "";
+  background: #a6aaac33;
+}
+.articles {
   margin-bottom: 30px;
-  border-bottom: 1px solid #a6aaac33;
 }
-.include i {
-  color: #30be82;
+.article {
+  padding-top: 20px;
+  border-bottom: var(--border_color);
 }
-.exclude i {
-  color: #fa3913;
-}
-.accordion_li {
+.profile_info {
   display: flex;
-  flex-direction: column;
-  margin: 20px 0;
-  overflow: hidden;
-  border-bottom: 1px solid #a6aaac33;
+  gap: 20px;
 }
-.accordion_header {
-  display: flex;
-  justify-content: space-between;
-  min-height: 50px;
-  align-items: center;
-}
-.accordion_li.open .accordion_hide {
-  height: auto;
-}
-.accordion_header h5 {
-  color: var(--text_color);
-  font-size: 18px;
-  font-style: normal;
+.information p {
+  font-size: 16px;
   font-weight: 700;
   line-height: 26px;
+  text-align: left;
 }
-.accordion .accordion_hide {
-  height: 0;
+.information i {
+  color: var(--like_color)1;
+}
+.article_col {
+  padding: 20px 0;
+}
+.article_col h1 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: left;
+}
+.article_col p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+}
+.article_col h6 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+  color: #a6aaac;
+}
+.article_col span {
+  color: #0f1416;
+}
+.add_articles h1 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: left;
+}
+.add_review h1 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+}
+.your_rating {
+  padding-top: 20px;
+  display: flex;
+}
+.add_review form {
+  margin: 30px 0;
+}
+.rating {
+  padding: 0 10px;
+  border-right: var(--border_color);
+}
+.rating:last-of-type {
+  border: none;
+}
+.rating i {
+  cursor: pointer;
+}
+.form_review label {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  width: 100%;
-  gap: 20px;
-  transition: height 0.3s linear;
+  gap: 10px;
+  color: #0f151f;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
 }
-.accordion_hide img {
+.form_review input,
+textarea {
   width: 100%;
-  object-fit: cover;
+  outline: none;
+  border-radius: 10px;
+  border: var(--border_color);
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
 }
 .similar_trip {
   margin-bottom: 120px;
@@ -339,7 +479,7 @@
   text-align: left;
 }
 .footer {
-  border-top: 1px solid #a6aaac33;
+  border-top: var(--border_color);
 }
 .footer_col {
   display: flex;
@@ -350,7 +490,7 @@
 .footer_logo {
   margin: 30px 0;
 }
-.footer_contact{
+.footer_contact {
   width: calc(30% - 50px * 0.3);
 }
 .footer_contact_col {
@@ -404,7 +544,7 @@
   display: flex;
   gap: 20px;
 }
-.footer_social_col i{
+.footer_social_col i {
   cursor: pointer;
 }
 .btn {
@@ -466,6 +606,18 @@
   line-height: 26px;
   text-align: left;
   padding: 15px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.review_btn {
+  color: var(--white);
+  background-color: var(--main_color);
+  border: 1px solid var(--main_color);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+  padding: 15px 30px;
   border-radius: 10px;
   cursor: pointer;
 }
