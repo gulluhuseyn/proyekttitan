@@ -411,6 +411,7 @@
 textarea {
   width: 100%;
   outline: none;
+  resize: none;
   border-radius: 10px;
   border: var(--border_color);
   padding: 16px;
