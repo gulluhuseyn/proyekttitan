@@ -340,7 +340,7 @@
   text-align: left;
 }
 .information i {
-  color: var(--like_color)1;
+  color: var(--like_color);
 }
 .article_col {
   padding: 20px 0;
@@ -622,3 +622,203 @@ textarea {
   border-radius: 10px;
   cursor: pointer;
 }
+@media only screen and (max-width: 1075px) {
+  .review_value_col h1 {
+    font-size: 55px;
+  }
+  .review_value_col p {
+    font-size: 14px;
+  }
+  .review_value_row h1 {
+    font-size: 15px;
+    padding-right: 240px;
+  }
+  .review_value_row p {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 1044px) {
+  .nav_logo img {
+    width: 50px;
+    height: 50px;
+  }
+  .nav_links ul li a {
+    font-size: 14px;
+  }
+  .breadcrumb p {
+    font-size: 12px;
+  }
+  .ticket_value h1 {
+    font-size: 30px;
+  }
+  .ticket_value span {
+    font-size: 16px;
+  }
+  .form_group {
+    padding: 8px 0;
+  }
+  .form_group label {
+    width: 100%;
+    font-size: 14px;
+  }
+  .form_group input {
+    width: 100%;
+    padding: 14px;
+  }
+  .form_table {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .form_table th {
+    font-size: 14px;
+  }
+  .td_input input {
+    width: 50px;
+  }
+  .td_value {
+    font-size: 12px;
+  }
+  .trip_service {
+    font-size: 14px;
+  }
+  .destination_word {
+    margin-top: 25px;
+  }
+  .destination_word h1 {
+    font-size: 35px;
+  }
+  .destination_content {
+    gap: 15px;
+  }
+  .destination_content_col {
+    gap: 20px;
+  }
+  .destination_review_col {
+    padding-right: 24px;
+  }
+  .destination_review_col h4 {
+    font-size: 14px;
+  }
+  .destination_review_col p,
+  .destination_review_col i {
+    font-size: 12px;
+  }
+  .destination_like,
+  .pass_overview,
+  .pass_review {
+    font-size: 18px;
+  }
+  .review p {
+    font-size: 18px;
+  }
+  .review_value_col i {
+    font-size: 14px;
+  }
+  .review_value_col h1 {
+    font-size: 45px;
+  }
+  .review_value_col p {
+    font-size: 14px;
+  }
+  .review_value_row h1 {
+    font-size: 14px;
+    padding-right: 195px;
+  }
+  .review_value_row p {
+    font-size: 14px;
+  }
+  .information p,
+  .article_col h1,
+  .article_col p {
+    font-size: 14px;
+  }
+  .article_col h6 {
+    font-size: 12px;
+  }
+  .add_articles h1 {
+    font-size: 18px;
+  }
+  .add_review h1 {
+    font-size: 14px;
+  }
+  .form_review input,
+  textarea {
+    padding: 14px;
+    font-size: 14px;
+  }
+  .similar_trip h1 {
+    font-size: 30px;
+  }
+  .trip_cards {
+    flex-wrap: wrap;
+  }
+  .trip_card {
+    width: calc((100% - (20px * (2 - 1))) / 2);
+  }
+  .trip_card img {
+    width: 100%;
+    height: 190px;
+  }
+  .trip_content {
+    font-size: 14px;
+  }
+  .trip_price h3 {
+    font-size: 26px;
+  }
+  .trip_price span {
+    font-size: 14px;
+  }
+  .footer_logo img {
+    width: 48px;
+    height: 48px;
+  }
+  .footer_contact_col p,
+  .footer_social_col p,
+  .footer_links ul li a {
+    font-size: 14px;
+  }
+  .footer_links h1 {
+    font-size: 16px;
+  }
+  .btn {
+    font-size: 14px;
+  }
+  .view_btn {
+    padding: 14px;
+    font-size: 14px;
+  }
+  .ticket_btn {
+    margin-top: 13px;
+    padding: 14px;
+    font-size: 14px;
+  }
+  .signup_btn {
+    font-size: 14px;
+    padding: 13px;
+  }
+  .login_btn {
+    font-size: 14px;
+    padding: 13px 16px;
+  }
+}
+@media only screen and (max-width: 920px) {
+  .review p {
+    font-size: 16px;
+  }
+  .review_value_col h1 {
+    font-size: 50px;
+  }
+  .review_value_col p {
+    font-size: 14px;
+  }
+  .review_value_row h1 {
+    font-size: 14px;
+    padding-right: 160px;
+  }
+  .review_value_row p {
+    font-size: 14px;
+  }
+}
+/* @media only screen and (max-width: 850px) {
+  
+} */
