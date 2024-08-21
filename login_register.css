@@ -59,8 +59,7 @@
 .login_word p,
 .register_word p,
 .forgot_word p,
-.enter_word p,
-.success_word p {
+.enter_word p{
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
@@ -139,45 +138,6 @@
   border-radius: 10px;
   outline: none;
 }
-.success {
-  width: 432px;
-  height: 332px;
-  background-color: yellow;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
-  text-align: center;
-}
-.ellipse1 {
-  background-color: #35aff41a;
-  border-radius: 50%;
-  height: 108px;
-  width: 108px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.ellipse2 {
-  background-color: #35aff433;
-  border-radius: 50%;
-  height: 86px;
-  width: 86px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.ellipse3 {
-  background-color: var(--main_color);
-  border-radius: 50%;
-  height: 64px;
-  width: 64px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .btn {
   width: 100%;
   padding: 20px;
@@ -191,16 +151,6 @@
   line-height: 26px;
   text-align: center;
 }
-.btn_back_login {
-  width: 300px;
-  height: 56px;
-  border: none;
-  border-radius: 10px;
-  background-color: var(--main_color);
-  cursor: pointer;
-  color: var(--white);
-}
-
 @media only screen and (max-width: 980px) {
   .login_pict,
   .register_pict,
@@ -228,8 +178,7 @@
   .login_word p,
   .register_word p,
   .forgot_word p,
-  .enter_word p,
-  .success_word p {
+  .enter_word p{
     font-size: 14px;
   }
   .login_form_group input,
@@ -279,8 +228,7 @@
   .login_word p,
   .register_word p,
   .forgot_word p,
-  .enter_word p,
-  .success_word p {
+  .enter_word p {
     font-size: 14px;
   }
   .login_form_group input,

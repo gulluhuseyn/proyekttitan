@@ -628,7 +628,7 @@ textarea {
 }
 #menu_btn,
 #login_icon_btn,
-#signup_icon_btn{
+#signup_icon_btn {
   display: none;
 }
 @media only screen and (max-width: 1075px) {
@@ -829,11 +829,12 @@ textarea {
   }
 }
 @media only screen and (max-width: 850px) {
-  .navbar{
-    position:relative;
+  .navbar {
+    margin: 18px 0;
+    position: relative;
   }
   #menu_btn,
-  #login_icon_btn ,
+  #login_icon_btn,
   #signup_icon_btn {
     display: block;
     color: var(--main_color);
@@ -842,10 +843,10 @@ textarea {
     background-color: var(--white);
   }
   #login_icon_btn a,
-  #signup_icon_btn a{
+  #signup_icon_btn a {
     color: var(--main_color);
   }
-  .nav_links ul{
+  .nav_links ul {
     display: none;
     position: absolute;
     top: 100%;
@@ -853,20 +854,392 @@ textarea {
     padding: 25px;
     background-color: var(--white);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    transition: right 0.3s ease; 
+    transition: right 0.3s ease;
   }
   .nav_links ul li {
     padding-bottom: 10px;
   }
-  .nav_links ul li a{
-    color: var(--main_color);
+  .nav_links ul li a {
+    color: var(--text_color);
   }
-  .nav_links ul.active{
+  .nav_links ul.active {
     display: block;
     right: 0;
   }
-  .signup_btn ,
+  .breadcrumb {
+    padding: 14px;
+  }
+  .destination_pict {
+    height: 50vh;
+  }
+  .main_destination {
+    gap: 20px;
+  }
+  .destination {
+    width: calc(70% - 20px * 0.7);
+    margin-bottom: 50px;
+  }
+  .destination_ticket {
+    margin-top: -70px;
+    width: calc(30% - 20px * 0.3);
+    padding: 16px;
+  }
+  .destination_ticket h3 {
+    font-size: 14px;
+  }
+  .ticket_value h1 {
+    font-size: 20px;
+  }
+  .ticket_value span {
+    font-size: 14px;
+  }
+  .form_group {
+    padding: 6px 0;
+  }
+  .form_group label {
+    font-size: 12px;
+  }
+  .form_group input {
+    padding: 12px;
+  }
+  .form_table {
+    width: 100%;
+    margin: 8px 0;
+  }
+  .form_table th {
+    font-size: 12px;
+  }
+  .td_input input {
+    width: 30px;
+    padding: 10px;
+  }
+  .td_value {
+    font-size: 12px;
+  }
+  .trip_service {
+    font-size: 12px;
+  }
+  .destination_word {
+    margin-top: 22px;
+  }
+  .destination_word h1 {
+    font-size: 30px;
+  }
+  .destination_content {
+    gap: 5px;
+  }
+  .destination_content_col {
+    gap: 10px;
+  }
+  .destination_review_col {
+    padding-right: 20px;
+  }
+  .destination_review_col h4 {
+    font-size: 12px;
+  }
+  .destination_review_col p,
+  .destination_review_col i {
+    font-size: 10px;
+  }
+  .destination_like {
+    padding: 2px;
+  }
+  .destination_like,
+  .pass_overview,
+  .pass_review {
+    font-size: 14px;
+  }
+  .pass {
+    margin: 16px 0;
+  }
+  .similar_trip h1 {
+    font-size: 24px;
+  }
+  .trip_card img {
+    height: 140px;
+  }
+  .trip_price h3 {
+    font-size: 20px;
+  }
+  .location span,
+  .date span {
+    font-size: 14px;
+  }
+  .review_value_col h1 {
+    font-size: 30px;
+    line-height: 50px;
+  }
+  .review_value_col i {
+    font-size: 12px;
+  }
+  .review_value_col p {
+    font-size: 12px;
+  }
+  .review_value_row h1 {
+    padding-right: 50px;
+  }
+  .information p,
+  .article_col h1,
+  .article_col p {
+    font-size: 12px;
+  }
+  .article_col h6 {
+    font-size: 10px;
+  }
+  .add_articles h1 {
+    font-size: 16px;
+  }
+  .add_review h1 {
+    font-size: 12px;
+  }
+  .form_review input,
+  textarea {
+    padding: 12px;
+    font-size: 12px;
+  }
+  .information i {
+    font-size: 12px;
+  }
+  .rating i {
+    font-size: 14px;
+  }
+  .footer {
+    margin-top: 90px;
+  }
+  .footer_logo {
+    margin: 25px 0;
+  }
+  .footer_contact {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer_contact_cols {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .footer_add {
+    width: 100%;
+  }
+  .footer_col {
+    display: block;
+  }
+  .footer_contact_col p,
+  .footer_social_col p,
+  .footer_links ul li a {
+    font-size: 12px;
+  }
+  .footer_links h1 {
+    font-size: 16px;
+  }
+  .signup_btn,
   .login_btn {
     display: none;
+  }
+  .btn {
+    padding: 5px;
+  }
+  .ticket_btn {
+    margin-top: 10px;
+    padding: 12px;
+    font-size: 12px;
+  }
+  .review_btn {
+    font-size: 14px;
+    padding: 15px;
+  }
+}
+@media only screen and (max-width: 630px) {
+  .main_destination {
+    gap: 25px;
+  }
+  .destination {
+    width: calc(60% - 25px * 0.6);
+  }
+  .destination_ticket {
+    margin-top: -70px;
+    width: calc(40% - 25px * 0.4);
+    padding: 10px;
+  }
+  .destination_ticket h3 {
+    font-size: 12px;
+  }
+  .ticket_value h1 {
+    font-size: 18px;
+  }
+  .ticket_value span {
+    font-size: 12px;
+  }
+  .form_group {
+    padding: 4px 0;
+  }
+  .form_group label {
+    font-size: 10px;
+  }
+  .form_group input {
+    padding: 10px;
+  }
+  .form_table {
+    margin: 6px 0;
+  }
+  .form_table th {
+    font-size: 10px;
+  }
+  .td_input input {
+    width: 28px;
+    padding: 8px;
+  }
+  .td_value {
+    font-size: 10px;
+  }
+  .trip_service {
+    font-size: 10px;
+  }
+  .destination_word {
+    margin-top: 18px;
+  }
+  .destination_word h1 {
+    font-size: 20px;
+  }
+  .destination_content {
+    gap: 5px;
+  }
+  .destination_content_col {
+    gap: 10px;
+  }
+  .destination_review_col {
+    padding-right: 5px;
+  }
+  .destination_review_col h4 {
+    font-size: 10px;
+  }
+  .destination_review_col i {
+    font-size: 8px;
+  }
+  .destination_like {
+    padding: 0px;
+  }
+  .destination_like {
+    font-size: 14px;
+  }
+  .pass_overview,
+  .pass_review {
+    font-size: 14px;
+    padding: 5px 0;
+  }
+  .review p {
+    font-size: 14px;
+  }
+  .review_value {
+    padding: 15px;
+    flex-direction: column;
+  }
+  .review_value_col {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #ffffffcc;
+  }
+  .btn span {
+    display: none;
+  }
+  .pass {
+    margin: 16px 0;
+  }
+  .similar_trip h1 {
+    font-size: 16px;
+  }
+  .trip_price h3 {
+    font-size: 16px;
+  }
+  .location span,
+  .date span {
+    font-size: 12px;
+  }
+  .review_value_col h1 {
+    font-size: 30px;
+    line-height: 50px;
+  }
+  .review_value_col i {
+    font-size: 12px;
+  }
+  .review_value_col p {
+    font-size: 12px;
+  }
+  .review_value_rows {
+    width: 100%;
+    justify-content: space-around;
+  }
+  .review_value_row h1 {
+    font-size: 12px;
+    padding-right: 70px;
+  }
+  .review_value_row p {
+    font-size: 12px;
+  }
+  .information p,
+  .article_col h1,
+  .article_col p {
+    font-size: 12px;
+    text-align: justify;
+  }
+  .add_articles h1 {
+    font-size: 14px;
+  }
+  .add_review h1 {
+    font-size: 12px;
+  }
+  .form_review input,
+  textarea {
+    padding: 10px;
+    font-size: 10px;
+  }
+  .information i {
+    font-size: 10px;
+  }
+  .your_rating {
+    display: block;
+  }
+  .rating {
+    border: none;
+    border-bottom: var(--border_color);
+  }
+  .rating i {
+    font-size: 12px;
+  }
+  .btn {
+    padding: 10px;
+  }
+  .ticket_btn {
+    margin-top: 8px;
+    padding: 10px;
+    font-size: 10px;
+  }
+  .review_btn {
+    padding: 10px;
+  }
+  .view_btn {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .review_value_rows {
+    justify-content: space-between;
+  }
+  .review_value_row h1 {
+    padding-right: 25px;
+  }
+  .trip_cards {
+    margin: 0;
+  }
+  .trip_card {
+    width: 100%;
+    margin: 15px;
+    gap: 10px;
+  }
+  .trip_card img {
+    height: 160px;
   }
 }
