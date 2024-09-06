@@ -74,11 +74,21 @@
   align-items: center;
   gap: 20px;
 }
-.fa-grip-vertical{
+.grid{
+  padding: 18px 20px !important;
+}
+.list,
+.grid {
+  background-color: var(--white);
+  padding: 18px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+.list_view_col button:hover,
+.list_view_col button.active{
   background-color: var(--main_color);
   color: var(--white);
-  padding: 10px 15px;
-  border-radius: 10px;
 }
 .list_view_col h4 {
   font-size: 16px;
@@ -107,14 +117,29 @@
   margin: 30px 0;
   gap: 20px;
 }
-.listing_card {
+ .listing_card {
   width: calc((100% - (20px * (2 - 1))) / 2);
   display: flex;
   gap: 20px;
   flex-direction: column;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
   padding: 20px;
+  border: 1px solid rgba(166, 170, 172, 0.20);
+}
+.listing_card_main_detail{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+} 
+.listing_card.list{
+  width: 100%;
+  flex-direction: row;
+}
+.listing_card.list .listing_card_main_detail{
+  width: calc(50% - 20px * 0.5);
+} 
+.listing_card.list .listing_pict{
+  width: calc(50% - 20px * 0.5);
 }
 .listing_card img {
   width: 100%;
@@ -243,13 +268,30 @@
   font-weight: 700;
   line-height: 26px;
 }
+.accordion_word i{
+  cursor: pointer;
+}
+.accordion_hide{
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
 .filter_col {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding-bottom: 20px;
   border-bottom: 1px solid #a6aaac1a;
 }
+.filter_col.open{
+  padding-bottom: 20px;
+}
+.filter_col.open .accordion_hide {
+  max-height: 300px;
+}
+.filter_col.open .fa-angle-down{
+  transform: rotate(180deg);
+}
+
 .form_group label {
   width: 100%;
   display: flex;
