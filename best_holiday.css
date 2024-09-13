@@ -466,9 +466,6 @@
   .breadcrumb p {
     font-size: 12px;
   }
-  .search input {
-    font-size: 14px;
-  }
   .footer_logo img {
     width: 48px;
     height: 48px;
@@ -485,9 +482,69 @@
     font-size: 14px;
     padding: 13px;
   }
-  #login {
+  #login{
     font-size: 14px;
     padding: 13px 16px;
+  }
+  .breadcrumb p {
+    font-size: 12px;
+  }
+  .search input,
+  .accordion_word h2,
+  .form_group label,
+  .filter_check label,
+  .filter_count p,
+  .list_view_col h4,
+  .list_view_default h4,
+  .listing_content span {
+    font-size: 14px;
+  }
+  .filter_price img{
+    width: 100%;
+  }
+  .list_view_col{
+    gap: 10px;
+  }
+  .grid {
+    padding: 14px 16px !important;
+  }
+  .list,
+  .grid {
+    padding: 14px;
+  }
+  .listing_content i,
+  .listing_price span {
+    font-size: 12px;
+  }
+  .listing_content h3,
+  .listing_price h3 {
+    font-size: 18px;
+  }
+  .location i,
+  .date i{
+    font-size: 12px;
+  }
+  .location_date{
+    flex-direction: column;
+    gap: 10px;
+    align-items: normal;
+  }
+  .location_date span{
+    font-size: 14px;
+  }
+  .view_btn{
+    padding: 14px;
+    font-size: 12px;
+  }
+  .page_pass{
+    gap: 5px;
+  }
+  .page_pass a{
+    padding: 5px 13px;
+    font-size: 14px;
+  }
+  .listing_card.list img{
+    height: 70%;
   }
 }
 @media only screen and (max-width: 840px) {
@@ -502,6 +559,10 @@
     font-size: 18px;
     border: none;
     background-color: var(--white);
+    color: var(--main_color);
+  }
+  #login_icon a,
+  #signup_icon a{
     color: var(--main_color);
   }
   .nav_links ul {
@@ -526,14 +587,6 @@
   }
   .breadcrumb {
     padding: 14px;
-  }
-  .search i {
-    display: none;
-  }
-  .search input {
-    font-size: 12px;
-    margin-bottom: 20px;
-    padding: 10px;
   }
   .footer {
     margin-top: 90px;
@@ -569,6 +622,83 @@
   #signup,
   #login {
     display: none;
+  }
+  .breadcrumb {
+    padding: 14px;
+  }
+  .search i {
+    display: none;
+  }
+  .search input {
+    font-size: 12px;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+  .listing_card{
+    width: 70%;
+    height: 100%;
+    gap: 10px;
+  }
+  .listing_card_main_detail {
+    gap: 5px;
+  }
+  .listing_card img{
+    height: 130px;
+  }
+  .listing_card.list img{
+    width: 100%;
+  }
+  .listing_card.list {
+    width: 100% !important;
+  }
+  .accordion_word h2,
+  .form_group label,
+  .filter_check label,
+  .filter_count p,
+  .list_view_col h4,
+  .list_view_default h4,
+  .listing_content span,
+  .filter_price p{
+    font-size: 12px;
+  }
+  /* .filter_price img{
+    width: 100%;
+  } */
+  .list_view_col{
+    gap: 6px;
+  }
+  .grid {
+    padding: 12px 14px !important;
+  }
+  .list,
+  .grid {
+    padding: 12px;
+  }
+  .listing_content i,
+  .listing_price span {
+    font-size: 10px;
+  }
+  .listing_content h3,
+  .listing_price h3 {
+    font-size: 14px;
+  }
+  .location i,
+  .date i{
+    font-size: 10px;
+  }
+  .location_date{
+    gap: 5px;
+  }
+  .location_date span{
+    font-size: 12px;
+  }
+  .view_btn{
+    padding: 12px;
+    font-size: 10px;
+  }
+  .page_pass a{
+    padding: 3px 10px;
+    font-size: 12px;
   }
 }
 @media only screen and (max-width: 550px) {
